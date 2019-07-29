@@ -1,10 +1,10 @@
-### Problem Description
+## Problem Description
 
-About the Data
-Your goal is to predict whether a mortgage application was accepted (meaning the loan was originated) or denied according to the given dataset, which is adapted from the Federal Financial Institutions Examination Council's (FFIEC).
+### About the Data
+The goal is to predict whether a mortgage application was accepted (meaning the loan was originated) or denied according to the given dataset, which is adapted from the Federal Financial Institutions Examination Council's (FFIEC).
 
 
-Target Variable
+### Target Variable
 We're trying to predict the variable accepted (a binary variable) for each row of the test data set.
 
 Your job is to:
@@ -15,7 +15,7 @@ Output your predictions in a format that matches submission_format.csv exactly.
 Upload your predictions to this competition in order to get a score.
 Export your grading token (click the "Export Score for EdX" tab) and paste it into the assignment grader on edX to get your course grade.
 
-Submission Format
+### Submission Format
 The format for the submission file is two columns with row_id and accepted. The data type of accepted is an integer, only valid values are 0 and 1.
 
 If you predicted 1 accepted for each respondent, the .csv file that you submit would look like:
@@ -28,14 +28,14 @@ row_id,accepted
 4,1
 ⁝
 
-Performance Metric
+### Performance Metric
 We're predicting a binary variable, so this is a classification problem. To measure classification, we'll use a metric known as accuracy (also known as "classification rate"). Accuracy is one metric for evaluating classification models. Informally, accuracy is the fraction of predictions our model got right. For binary classification, accuracy can be calculated in terms of positives and negatives as follows:
 
 accuracy=(TP+TN)/(TP+TN+FP+FN)
 where TP means True Positives, TN means True Negatives, FP means False Positives, and FN means False Negatives.
 
 
-Features
+### Features
 There are 21 variables in this dataset. Each row in the dataset represents a HMDA-reported loan application, and the dataset we are working with covers one particular year.
 
 We provide a unique identifier called lender for each individual loan-making institution.
@@ -105,7 +105,7 @@ applicant_sex (categorical) - Sex of the applicant; available values are:
 4 or 5 -- Not applicable
 co_applicant (bool) - Indicates whether there is a co-applicant (often a spouse) or not
 
-CENSUS INFORMATION
+### CENSUS INFORMATION
 population - Total population in tract
 minority_population_pct - Percentage of minority population to total population for tract
 ffiecmedian_family_income - FFIEC Median family income in dollars for the MSA/MD in which the tract is located (adjusted annually by FFIEC)
@@ -116,7 +116,7 @@ INDEX AND TARGET VARIABLE
 row_id - A unique identifier with no intrinsic meaning, but the IDs in your submission must match the submission format exactly
 accepted - Indicates whether the mortgage application was accepted (successfully originated) with a value of 1 or denied with a value of 0
 
-Example Row
+### Example Row
 Here's an example of one of the rows in the dataset so that you can see the kinds of values you might expect in the dataset. Most are categorical, a few are numerical, and there can be missing values.
 
 row_id	0
