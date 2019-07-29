@@ -1,11 +1,4 @@
-Problem Description
-About the Data
-Target Variable
-Submission Format
-Performance Metric
-Features
-Example Row
-References
+### Problem Description
 
 About the Data
 Your goal is to predict whether a mortgage application was accepted (meaning the loan was originated) or denied according to the given dataset, which is adapted from the Federal Financial Institutions Examination Council's (FFIEC).
